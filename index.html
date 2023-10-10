@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARSHIT'S PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        margin: 0 ;
+        padding: 0;
+    }
+    body{
+        background-color: rgba(188, 75, 52, 0.76);
+        color: black;
+        
+        font-family: 'Young Serif', serif;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(206, 48, 48);
+    }
+    .left{
+        font-size: 2rem;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+       color: wheat;
+    }
+    nav ul li a:hover{
+        text-decoration: none;
+       color: rgb(184, 167, 136);
+       font-size: 1.1rem;
+    }
+    .firstsec{
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+        
+        
+    }
+    .ls{
+        
+        font-size: 3rem;
+        margin: 30px 0;
+        
+        
+    }
+    .firstsec >div{
+        width: 30%;
+    }
+.rs img{
+    width: 130%;
+    margin: 50px 0;
+
+}
+.pp{
+    color: rgba(103, 2, 2, 0.824);
+}
+#element{
+    color: rgba(103, 2, 2, 0.824);;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+Nakul's Portfolio
+            </div>
+            <div class ="right">
+                <ul>
+                    <li><a href="/about.html">About</a> </li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/contact.html">Contact me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsec">
+            <div class="ls">
+                Hello,I am <span class="pp">Nakul</span>  
+                <div>and I am a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rs">
+                <img src="pic.png" alt="">
+
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Programmer.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
